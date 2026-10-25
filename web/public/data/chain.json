@@ -1,0 +1,622 @@
+{
+  "network": "hardhat",
+  "chainId": 31337,
+  "contract": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "deployTx": "0xc1ac0cb854137d78aa4b9b6007859a91cc27e55974c9e93e2942e02aaa47f8d3",
+  "generatedAt": "2026-10-25T17:54:34.517Z",
+  "checkers": [
+    {
+      "name": "Checker A (university lab)",
+      "address": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc"
+    },
+    {
+      "name": "Checker B (NGO)",
+      "address": "0x976EA74026E726554dB657fA54763abd0C3a0aa9"
+    },
+    {
+      "name": "Checker C (simulated faulty)",
+      "address": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955"
+    }
+  ],
+  "quorum": 2,
+  "toleranceBps": 100,
+  "projects": {
+    "rondonia-frontier": {
+      "onchainId": 1,
+      "registerTx": "0xf963ab0c90b2500d9e60475e4ec2ce31a469fb577afba7bcb0ea880da527f277",
+      "boundaryHash": "0x053c534bff2d0ffef90892c59e596d083ca88706c0bc57f39f8b15b18c89fb75",
+      "baselineCoverBps": 9580,
+      "claimedThreatBps": 200,
+      "checks": [
+        {
+          "period": 2021,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 9500,
+              "refLossBps": 688,
+              "evidenceHash": "0xcd42d1b2f8645dceda2eed9a5ecb7c7516a35dc88e96f27642f45b9bc6a75a74",
+              "tx": "0x4107bd633eee17a3e4bdaa47e9f8458a3a34a62e83b1945f19df2e9471c06ca4",
+              "block": 6,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 10000,
+              "refLossBps": 688,
+              "evidenceHash": "0xcd42d1b2f8645dceda2eed9a5ecb7c7516a35dc88e96f27642f45b9bc6a75a74",
+              "tx": "0xc72ae4d8d49b6da371637bcd30c3d60239b38740688e98ef3d4469d8164f83fb",
+              "block": 7,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 9500,
+              "refLossBps": 688,
+              "evidenceHash": "0xcd42d1b2f8645dceda2eed9a5ecb7c7516a35dc88e96f27642f45b9bc6a75a74",
+              "tx": "0xbccc49309f1ebb5dd95143550596d04c607203629ff28ae184d3c54646dd5463",
+              "block": 8,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 9500,
+          "statusAfter": "Healthy",
+          "finalizeTx": "0xbccc49309f1ebb5dd95143550596d04c607203629ff28ae184d3c54646dd5463"
+        },
+        {
+          "period": 2023,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 9370,
+              "refLossBps": 573,
+              "evidenceHash": "0xc6ca092bf40eb55e6d3eefb27eba846cde39ac0f9b5e51f8e24ce175170737d8",
+              "tx": "0x78cc48cdc7d35332111ec4ac4a0ffed6b8a4dfd21f918169f299883e5e1a64b3",
+              "block": 9,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 10000,
+              "refLossBps": 573,
+              "evidenceHash": "0xc6ca092bf40eb55e6d3eefb27eba846cde39ac0f9b5e51f8e24ce175170737d8",
+              "tx": "0x02434a7a486979b42bb5337ba4c53480e28339e323fe8810cff2308911cc686e",
+              "block": 10,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 9370,
+              "refLossBps": 573,
+              "evidenceHash": "0xc6ca092bf40eb55e6d3eefb27eba846cde39ac0f9b5e51f8e24ce175170737d8",
+              "tx": "0x7382adcd99b2db82780b1fa3b13e33a8054fda14e283a91854199e72053f0de0",
+              "block": 11,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 9370,
+          "statusAfter": "Healthy",
+          "finalizeTx": "0x7382adcd99b2db82780b1fa3b13e33a8054fda14e283a91854199e72053f0de0"
+        },
+        {
+          "period": 2025,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 7800,
+              "refLossBps": 699,
+              "evidenceHash": "0xa90457929c3db60830d3227f3925708e581c41392a940485ff524925ec86484e",
+              "tx": "0x3126891dbf936adb423b94129fe96d22edb6658f72af4979b74b27f78e2c98f1",
+              "block": 12,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 9300,
+              "refLossBps": 699,
+              "evidenceHash": "0xa90457929c3db60830d3227f3925708e581c41392a940485ff524925ec86484e",
+              "tx": "0xcac10b6d10cf2e74ca483fdb333045a00e0a728b9cb88063005be2b8516bd673",
+              "block": 13,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 7800,
+              "refLossBps": 699,
+              "evidenceHash": "0xa90457929c3db60830d3227f3925708e581c41392a940485ff524925ec86484e",
+              "tx": "0xbfe8bf61782d13f216f0546a0180609a63269b054f8a2c59b0f138ea494efae4",
+              "block": 14,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 7800,
+          "statusAfter": "Frozen",
+          "finalizeTx": "0xbfe8bf61782d13f216f0546a0180609a63269b054f8a2c59b0f138ea494efae4"
+        },
+        {
+          "period": 2026,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 7790,
+              "refLossBps": 602,
+              "evidenceHash": "0x1bdc8e2ecccb7a961557b64ebd983d092a66f0aeea9ff6bdc8665b1f57f839cd",
+              "tx": "0xcc0114799936dcb9eb5811d4dc18121521a68a607994ddc41882846553fef4e8",
+              "block": 15,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 9290,
+              "refLossBps": 602,
+              "evidenceHash": "0x1bdc8e2ecccb7a961557b64ebd983d092a66f0aeea9ff6bdc8665b1f57f839cd",
+              "tx": "0xdd1e6301b0cccb247e0845b11d24866d2a2348ec27c6a9669a200af6a145d8eb",
+              "block": 16,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 7790,
+              "refLossBps": 602,
+              "evidenceHash": "0x1bdc8e2ecccb7a961557b64ebd983d092a66f0aeea9ff6bdc8665b1f57f839cd",
+              "tx": "0x1f90a822ace70789270e65bd8e7cb68089cc9a1cd36bc1ea799106139cfd3eda",
+              "block": 17,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 7790,
+          "statusAfter": "Frozen",
+          "finalizeTx": "0x1f90a822ace70789270e65bd8e7cb68089cc9a1cd36bc1ea799106139cfd3eda"
+        }
+      ],
+      "actions": [
+        {
+          "type": "Issued",
+          "detail": "10,000 credits minted to the developer at registration (2019 baseline)",
+          "tx": "0x240b5287b0fa03e39e2bd4196077bd8bd6943809e44ad1bf52c4111e36ce154e",
+          "revertReason": null
+        },
+        {
+          "type": "Transfer",
+          "detail": "Developer sold 2,500 credits to a buyer while the project was Healthy",
+          "tx": "0xe7d5fb569c719c4b8376e079bf9bd130dc38b42b0e8eeb8f3ea8421181644763",
+          "revertReason": null
+        },
+        {
+          "type": "Retired",
+          "detail": "Buyer retired 500 credits (burned on-chain, cannot be resold)",
+          "tx": "0xe09206f81d993ec8fdb751aa4886d44b5e9db753e30d776a8e9768dd9ef7eae7",
+          "revertReason": null
+        },
+        {
+          "type": "TransferBlocked",
+          "detail": "Buyer tried to resell 100 Frozen credits — the contract rejected it",
+          "tx": null,
+          "revertReason": "ProjectFrozen(1)"
+        },
+        {
+          "type": "RetireBlocked",
+          "detail": "Buyer tried to retire 100 Frozen credits against its emissions — the contract rejected it",
+          "tx": null,
+          "revertReason": "ProjectFrozen(1)"
+        },
+        {
+          "type": "DuplicateRegistrationBlocked",
+          "detail": "Someone tried to register the same forest boundary a second time to issue credits twice — rejected",
+          "tx": null,
+          "revertReason": "BoundaryAlreadyRegistered(1)"
+        }
+      ],
+      "status": "Frozen",
+      "overcredited": false,
+      "issued": 10000,
+      "retired": 500
+    },
+    "rondonia-riverside": {
+      "onchainId": 2,
+      "registerTx": "0xba0fbdfeb5ccca0428d7c5cd3bec4c95835aaa79bd8e62acff61aa80343d3e0a",
+      "boundaryHash": "0xa62d03ad9a595e491f7812b0cfa3e632c7a446361fefa48acf9a8a341b884e33",
+      "baselineCoverBps": 9490,
+      "claimedThreatBps": 150,
+      "checks": [
+        {
+          "period": 2021,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 9020,
+              "refLossBps": 66,
+              "evidenceHash": "0xf5be8c18279c31563517def722c3bc9f638e99434c7a182c9cfc463117644ca2",
+              "tx": "0xacf8da6aa2d8fd3a20e023b21ce24c2023adf26bab72ae9aeca4cdc354b8c062",
+              "block": 24,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 10000,
+              "refLossBps": 66,
+              "evidenceHash": "0xf5be8c18279c31563517def722c3bc9f638e99434c7a182c9cfc463117644ca2",
+              "tx": "0x07c9dbce454aa4bfffcf6f0e8b62647557a12ce777c210f0ca835a7c31872a97",
+              "block": 25,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 9020,
+              "refLossBps": 66,
+              "evidenceHash": "0xf5be8c18279c31563517def722c3bc9f638e99434c7a182c9cfc463117644ca2",
+              "tx": "0x0ee6063140d6d6c8ae0e7f0dfe29393b93b2b0c7bfb9ea4322923cb1bf2e11ec",
+              "block": 26,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 9020,
+          "statusAfter": "Healthy",
+          "finalizeTx": "0x0ee6063140d6d6c8ae0e7f0dfe29393b93b2b0c7bfb9ea4322923cb1bf2e11ec"
+        },
+        {
+          "period": 2023,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 8040,
+              "refLossBps": 705,
+              "evidenceHash": "0xd89045ebfcc716c6ce586e95aa7d6a24d1db1f5de5e9a95c1a430ba6a23fa9fb",
+              "tx": "0x35b0695e36cb7f995009f49a9eff402e407c47efd73db10f0b53c04833a3f03a",
+              "block": 27,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 9540,
+              "refLossBps": 705,
+              "evidenceHash": "0xd89045ebfcc716c6ce586e95aa7d6a24d1db1f5de5e9a95c1a430ba6a23fa9fb",
+              "tx": "0x83b153fcca20b143bcff45791a3b6696fff5279466eb673261ced89d151b90fb",
+              "block": 28,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 8040,
+              "refLossBps": 705,
+              "evidenceHash": "0xd89045ebfcc716c6ce586e95aa7d6a24d1db1f5de5e9a95c1a430ba6a23fa9fb",
+              "tx": "0x88da4862e91771afc31d5506e9c9d1525896e42600ea61622fa6ea2b5d781778",
+              "block": 29,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 8040,
+          "statusAfter": "Frozen",
+          "finalizeTx": "0x88da4862e91771afc31d5506e9c9d1525896e42600ea61622fa6ea2b5d781778"
+        },
+        {
+          "period": 2025,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 7960,
+              "refLossBps": 591,
+              "evidenceHash": "0x7981799f1c6133770c4a2e6de2f38e0b6ae53e269fdaca6a345eab0459dd9efe",
+              "tx": "0xb719416213b2e42a4b7b49aae05c64e05f0d13e554ef12ca3cb5aed2b4500c44",
+              "block": 30,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 9460,
+              "refLossBps": 591,
+              "evidenceHash": "0x7981799f1c6133770c4a2e6de2f38e0b6ae53e269fdaca6a345eab0459dd9efe",
+              "tx": "0x108da35267878e9fe8eec34e45745eddd527f7df026c91ffde17a5d60086cfe7",
+              "block": 31,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 7960,
+              "refLossBps": 591,
+              "evidenceHash": "0x7981799f1c6133770c4a2e6de2f38e0b6ae53e269fdaca6a345eab0459dd9efe",
+              "tx": "0x50d7a7221a9de53ab5491ecad15357b765b6b628c672afbf0ad0469818759f21",
+              "block": 32,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 7960,
+          "statusAfter": "Frozen",
+          "finalizeTx": "0x50d7a7221a9de53ab5491ecad15357b765b6b628c672afbf0ad0469818759f21"
+        },
+        {
+          "period": 2026,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 7880,
+              "refLossBps": 528,
+              "evidenceHash": "0xcf61e387207101e9375b0835acc4415ad34500175bc8488f02ce3be72d1325df",
+              "tx": "0x074873480be5e50e7385945463aaae95e630d96bee9ed7a316a718b052051881",
+              "block": 33,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 9380,
+              "refLossBps": 528,
+              "evidenceHash": "0xcf61e387207101e9375b0835acc4415ad34500175bc8488f02ce3be72d1325df",
+              "tx": "0xf32887c4a0d8c5cf5cdbfdadf8ab1aee11353e68327e525ef6dc6339622d9d04",
+              "block": 34,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 7880,
+              "refLossBps": 528,
+              "evidenceHash": "0xcf61e387207101e9375b0835acc4415ad34500175bc8488f02ce3be72d1325df",
+              "tx": "0x3a7fee72064a73c09b3476f7281a71c994d476f72f1d185ff4e937808c5fae7a",
+              "block": 35,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 7880,
+          "statusAfter": "Frozen",
+          "finalizeTx": "0x3a7fee72064a73c09b3476f7281a71c994d476f72f1d185ff4e937808c5fae7a"
+        }
+      ],
+      "actions": [
+        {
+          "type": "Issued",
+          "detail": "10,000 credits minted to the developer at registration (2019 baseline)",
+          "tx": "0x4150b8be8c2ba19d7c50401cb84487e55394881a45dc0db6a78cd8c55b7e5a6f",
+          "revertReason": null
+        },
+        {
+          "type": "Transfer",
+          "detail": "Developer sold 2,500 credits to a buyer while the project was Healthy",
+          "tx": "0x2161a329a711289415615f5e5fe157ef9f6e9cca097fd4130e023e4b689a0951",
+          "revertReason": null
+        },
+        {
+          "type": "Retired",
+          "detail": "Buyer retired 500 credits (burned on-chain, cannot be resold)",
+          "tx": "0xd91f261954f2b7d4762e5f6e98bd218216b1c06125d4cf58dc870b4967cd0f0a",
+          "revertReason": null
+        },
+        {
+          "type": "TransferBlocked",
+          "detail": "Buyer tried to resell 100 Frozen credits — the contract rejected it",
+          "tx": null,
+          "revertReason": "ProjectFrozen(2)"
+        },
+        {
+          "type": "RetireBlocked",
+          "detail": "Buyer tried to retire 100 Frozen credits against its emissions — the contract rejected it",
+          "tx": null,
+          "revertReason": "ProjectFrozen(2)"
+        }
+      ],
+      "status": "Frozen",
+      "overcredited": false,
+      "issued": 10000,
+      "retired": 500
+    },
+    "borneo-interior": {
+      "onchainId": 3,
+      "registerTx": "0x5d5fabd1837d72757702abe21b125da9ae4d7f1cb89df025a626b48d1ee4598e",
+      "boundaryHash": "0x791f9cb39361156b31ef85d8436c9701b82c4bc9d84acc024d231cd8d20627fd",
+      "baselineCoverBps": 9960,
+      "claimedThreatBps": 250,
+      "checks": [
+        {
+          "period": 2021,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 9870,
+              "refLossBps": 60,
+              "evidenceHash": "0x0e4a78f12d7b5c9ae8dde5efd5dc5e7fedbf94e162ec835030a63bcb2ed225ad",
+              "tx": "0x669b3168fd64c9c1d828b1d01655309f125ba76a6cc268c4fe946260193e7335",
+              "block": 42,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 10000,
+              "refLossBps": 60,
+              "evidenceHash": "0x0e4a78f12d7b5c9ae8dde5efd5dc5e7fedbf94e162ec835030a63bcb2ed225ad",
+              "tx": "0x6fd6433f8e7ec2ec2e676a676ca00e8fff1e7c1fb120310e446c85f9740e0825",
+              "block": 43,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 9870,
+              "refLossBps": 60,
+              "evidenceHash": "0x0e4a78f12d7b5c9ae8dde5efd5dc5e7fedbf94e162ec835030a63bcb2ed225ad",
+              "tx": "0x8cb20efc811c86d36949f0275c8068af5647f4e18a5f6c55c485955b1f4d6ce3",
+              "block": 44,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 9870,
+          "statusAfter": "Healthy",
+          "finalizeTx": "0x8cb20efc811c86d36949f0275c8068af5647f4e18a5f6c55c485955b1f4d6ce3"
+        },
+        {
+          "period": 2023,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 9820,
+              "refLossBps": 33,
+              "evidenceHash": "0x27f3b0b272f032f7998fb88d2f585eafa43f5c23e516e2e64cda8d66a30296b6",
+              "tx": "0xbb21329657246ca7678a87a38552083597947155e76d63d213103785c753c426",
+              "block": 45,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 10000,
+              "refLossBps": 33,
+              "evidenceHash": "0x27f3b0b272f032f7998fb88d2f585eafa43f5c23e516e2e64cda8d66a30296b6",
+              "tx": "0x00ed75faf913a45dedf36dea8f8e679f4ba47928d9aa6d0b8d3614261157909b",
+              "block": 46,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 9820,
+              "refLossBps": 33,
+              "evidenceHash": "0x27f3b0b272f032f7998fb88d2f585eafa43f5c23e516e2e64cda8d66a30296b6",
+              "tx": "0x3648acf7f5edd232f5c947c6b67fd1934113d6a5c0a017888d8c5e3a8198df2d",
+              "block": 47,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 9820,
+          "statusAfter": "Healthy",
+          "finalizeTx": "0x3648acf7f5edd232f5c947c6b67fd1934113d6a5c0a017888d8c5e3a8198df2d"
+        },
+        {
+          "period": 2025,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 9800,
+              "refLossBps": 22,
+              "evidenceHash": "0xdf75dbb4633cbca70fe536cbf3af0d4409c0b14aa2492e178db19140ca2586c7",
+              "tx": "0x5cd5ce52afb427dd8c29fb487bdffee7d8351b4a91b189381e67b10af26275cd",
+              "block": 48,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 10000,
+              "refLossBps": 22,
+              "evidenceHash": "0xdf75dbb4633cbca70fe536cbf3af0d4409c0b14aa2492e178db19140ca2586c7",
+              "tx": "0xe173260f0cbca3fe350ce254f1ea4b49a9280399d0cccd35c4a61cf1dcb1192d",
+              "block": 49,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 9800,
+              "refLossBps": 22,
+              "evidenceHash": "0xdf75dbb4633cbca70fe536cbf3af0d4409c0b14aa2492e178db19140ca2586c7",
+              "tx": "0x6cc77c2f329130877a97198e7ade840729407b86ee5f86652a3f5979185cc456",
+              "block": 50,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 9800,
+          "statusAfter": "Healthy",
+          "finalizeTx": "0x6cc77c2f329130877a97198e7ade840729407b86ee5f86652a3f5979185cc456"
+        },
+        {
+          "period": 2026,
+          "submissions": [
+            {
+              "checker": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+              "name": "Checker A (university lab)",
+              "coverBps": 9800,
+              "refLossBps": 19,
+              "evidenceHash": "0x7c16720360daa2446f1076c253db3663a560d210203011175cb42d900a157f0f",
+              "tx": "0xd3301d98488f5c3adea616e591c22373d2a43ce7971b4c98e4338af9604bf013",
+              "block": 51,
+              "outcome": "agreed"
+            },
+            {
+              "checker": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+              "name": "Checker C (simulated faulty)",
+              "coverBps": 10000,
+              "refLossBps": 19,
+              "evidenceHash": "0x7c16720360daa2446f1076c253db3663a560d210203011175cb42d900a157f0f",
+              "tx": "0x4b5b200c4e2a11fb8e5ba3aa8c83ec79faa6d56ce984196d214c58324841b173",
+              "block": 52,
+              "outcome": "outlier"
+            },
+            {
+              "checker": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+              "name": "Checker B (NGO)",
+              "coverBps": 9800,
+              "refLossBps": 19,
+              "evidenceHash": "0x7c16720360daa2446f1076c253db3663a560d210203011175cb42d900a157f0f",
+              "tx": "0xee08aedb2049bda563724484f9378f5e2fa33a401aa89cd4c42b91d8c9cfdea3",
+              "block": 53,
+              "outcome": "agreed"
+            }
+          ],
+          "acceptedCoverBps": 9800,
+          "statusAfter": "Healthy",
+          "finalizeTx": "0xee08aedb2049bda563724484f9378f5e2fa33a401aa89cd4c42b91d8c9cfdea3"
+        }
+      ],
+      "actions": [
+        {
+          "type": "Issued",
+          "detail": "10,000 credits minted to the developer at registration (2019 baseline)",
+          "tx": "0x37c6804959cd5b3a1d1f2d37b81c35f0b44857ef0b863f25aa4db857cda21b4b",
+          "revertReason": null
+        },
+        {
+          "type": "Transfer",
+          "detail": "Developer sold 2,500 credits to a buyer while the project was Healthy",
+          "tx": "0x88583cb83e51258d5a8c1e9ada850417ba554dcfe8098b1908eed14037feae7d",
+          "revertReason": null
+        },
+        {
+          "type": "Retired",
+          "detail": "Buyer retired 500 credits (burned on-chain, cannot be resold)",
+          "tx": "0x8e99e3e4fee0f201f5f0fe7ee5faf189e73c18fe5a2c8bc766bc8b46d8b4d5a2",
+          "revertReason": null
+        },
+        {
+          "type": "Transfer",
+          "detail": "Buyer moved 100 credits while Healthy",
+          "tx": "0x9bc5820cf2ab384a3379e5bbe068dcf18485748e198d95f95516ef4453d554c6",
+          "revertReason": null
+        },
+        {
+          "type": "Retired",
+          "detail": "Buyer retired 100 more credits while Healthy",
+          "tx": "0xe901e8c9695310f2a158de357f3dea0f11d2e463f2713443cdbe2ac30f67ea2a",
+          "revertReason": null
+        }
+      ],
+      "status": "Healthy",
+      "overcredited": true,
+      "issued": 10000,
+      "retired": 600
+    }
+  }
+}
