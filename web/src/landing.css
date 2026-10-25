@@ -1,0 +1,104 @@
+/* Landing page. Shares tokens and type with the dashboard (styles.css). */
+.lp { min-height: 100vh; overflow-x: hidden; }
+.lp main, .lp-nav, .lp-foot { max-width: 1180px; margin: 0 auto; padding-inline: 24px; }
+
+.lp-nav { display: flex; align-items: center; gap: 24px; padding-block: 18px; border-bottom: 1px solid var(--border); }
+.lp-brand { color: var(--text); text-decoration: none; font-family: var(--display); font-size: 1.25rem; font-weight: 700; gap: 10px; }
+.lp-brand .logo { width: 32px; height: 32px; }
+.lp-nav nav { display: flex; gap: 22px; margin-left: auto; }
+.lp-nav nav a { color: var(--muted); text-decoration: none; font-size: 0.88rem; }
+.lp-nav nav a:hover { color: var(--text); }
+
+.lp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 8px;
+  background: var(--green);
+  color: #06120b;
+  font-weight: 650;
+  font-size: 0.92rem;
+  text-decoration: none;
+  border: 1px solid var(--green);
+}
+.lp-btn:hover { background: #5be59a; }
+.lp-btn-small { padding: 7px 13px; font-size: 0.84rem; }
+.lp-link { color: var(--text); font-size: 0.92rem; font-weight: 600; text-decoration: underline; text-decoration-color: var(--border-strong); text-underline-offset: 4px; }
+.lp-link:hover { text-decoration-color: var(--green); }
+.lp-btn:focus-visible, .lp-link:focus-visible, .lp-nav a:focus-visible, .lp-table a:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+
+/* Hero */
+.lp-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; padding-block: 64px 48px; }
+.lp-hero h1 { margin: 12px 0 0; font-family: var(--display); font-size: clamp(2.2rem, 4.6vw, 3.5rem); line-height: 1.06; letter-spacing: -0.015em; }
+.lp-lead { margin: 20px 0 0; font-size: 1.08rem; line-height: 1.65; color: var(--muted); max-width: 34em; }
+.lp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin-top: 28px; }
+.lp-fine { margin: 18px 0 0; font-size: 0.8rem; color: var(--faint); }
+
+.lp-figure { margin: 0; }
+.lp-figure-empty { aspect-ratio: 1; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.lp-split { position: relative; aspect-ratio: 1; border: 1px solid var(--border-strong); border-radius: 12px; overflow: hidden; background: #0a120e; }
+.lp-split img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.lp-split-after { position: absolute; inset: 0; clip-path: inset(0 0 0 50%); }
+.lp-split-after::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; margin-left: -1px; background: #fff; z-index: 2; }
+.lp-loss { opacity: 0.9; }
+.lp-split-tag { position: absolute; bottom: 12px; z-index: 3; padding: 3px 9px; border-radius: 6px; background: rgba(11, 20, 16, 0.85); font-size: 0.8rem; font-weight: 700; }
+.lp-split-tag-left { left: 12px; }
+.lp-split-tag-right { right: 12px; }
+.lp-figure figcaption { margin-top: 12px; font-size: 0.8rem; line-height: 1.55; color: var(--muted); }
+.lp-figure figcaption strong { color: var(--text); font-weight: 600; }
+
+/* Key figures */
+.lp-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0 0 8px; border-block: 1px solid var(--border); }
+.lp-facts div { padding: 20px 20px 20px 0; }
+.lp-facts div + div { padding-left: 20px; border-left: 1px solid var(--border); }
+.lp-facts dt { font-size: 0.78rem; color: var(--muted); }
+.lp-facts dd { margin: 4px 0 0; font-size: 1.9rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.2; }
+.lp-facts dd.lp-fact-note { margin-top: 2px; font-size: 0.76rem; font-weight: 400; color: var(--faint); }
+
+/* Sections */
+.lp-section { padding-block: 56px; border-bottom: 1px solid var(--border); }
+.lp-section:last-child { border-bottom: 0; }
+.lp-section h2 { margin: 0 0 24px; font-family: var(--display); font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.2; letter-spacing: -0.01em; }
+.lp-section-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: 24px; }
+.lp-section-head h2 { margin: 0; }
+.lp-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.lp-cols p { margin: 0; color: var(--muted); line-height: 1.7; }
+
+.lp-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+.lp-steps li { border-top: 1px solid var(--border-strong); padding-top: 16px; }
+.lp-step-no { font-family: var(--mono); font-size: 0.8rem; color: var(--green); }
+.lp-steps h3 { margin: 8px 0 8px; font-size: 1.05rem; font-weight: 650; }
+.lp-steps p { margin: 0; font-size: 0.9rem; line-height: 1.65; color: var(--muted); }
+
+.lp-table td { vertical-align: middle; padding-block: 12px; }
+.lp-table a { color: var(--blue); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.lp-table a:hover { text-decoration: underline; }
+.lp-status { display: inline-flex; flex-wrap: wrap; gap: 6px; }
+
+.lp-limits { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 32px; }
+.lp-limits li { padding-left: 16px; border-left: 2px solid var(--border-strong); color: var(--muted); font-size: 0.92rem; line-height: 1.6; }
+
+.lp-foot { padding-block: 28px 40px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--faint); }
+.lp-foot p { margin: 0 0 6px; }
+
+@media (max-width: 900px) {
+  .lp-hero { grid-template-columns: minmax(0, 1fr); gap: 36px; padding-block: 40px 32px; }
+  .lp-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lp-facts div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .lp-facts div:nth-child(n + 3) { border-top: 1px solid var(--border); }
+  .lp-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lp-cols, .lp-limits { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .lp-section { padding-block: 40px; }
+}
+@media (max-width: 560px) {
+  .lp main, .lp-nav, .lp-foot { padding-inline: 16px; }
+  .lp-nav { gap: 12px; flex-wrap: wrap; }
+  .lp-nav nav { order: 3; width: 100%; margin-left: 0; gap: 18px; }
+  .lp-nav .lp-btn-small { margin-left: auto; }
+  .lp-steps { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .lp-facts div, .lp-facts div + div { padding: 14px 12px 14px 0; }
+  .lp-facts div:nth-child(even) { padding-left: 12px; }
+  .lp-facts dd { font-size: 1.5rem; }
+  .lp-actions .lp-btn { width: 100%; }
+}
