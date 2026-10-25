@@ -1,0 +1,468 @@
+{
+  "generatedAt": "2026-10-25T17:54:05.955Z",
+  "source": "Sentinel-2 L2A via Microsoft Planetary Computer",
+  "classifier": {
+    "type": "logistic-regression",
+    "features": [
+      "B02",
+      "B03",
+      "B04",
+      "B08",
+      "B11",
+      "B12",
+      "NDVI",
+      "NDMI",
+      "NBR",
+      "NDVI_TEXTURE"
+    ],
+    "labels": "ESA WorldCover 2021 — tree cover (class 10) vs other",
+    "trainPixels": 8400,
+    "testPixels": 3600,
+    "accuracy": 0.9419,
+    "precision": 0.9376000000000001,
+    "recall": 0.9455,
+    "f1": 0.9415,
+    "available": {
+      "forest": 480051,
+      "other": 49065
+    }
+  },
+  "thresholds": {
+    "healthyPct": 95,
+    "atRiskPct": 85
+  },
+  "projects": [
+    {
+      "id": "rondonia-frontier",
+      "name": "Jaci Frontier Forest",
+      "region": "Rondônia",
+      "country": "Brazil",
+      "continent": "South America",
+      "center": [
+        -9.4047,
+        -64.3958
+      ],
+      "boundary": [
+        [
+          -9.41831,
+          -64.40953
+        ],
+        [
+          -9.39108,
+          -64.38211
+        ]
+      ],
+      "reference": [
+        [
+          -9.39119,
+          -64.40942
+        ],
+        [
+          -9.36395,
+          -64.382
+        ]
+      ],
+      "imageBounds": [
+        [
+          -9.41831,
+          -64.40953
+        ],
+        [
+          -9.39108,
+          -64.38211
+        ]
+      ],
+      "areaHa": 900,
+      "claimedThreatPctPerYear": 2,
+      "years": [
+        {
+          "year": 2019,
+          "window": "2019-07-01/2019-09-30",
+          "scenes": [
+            "S2A_MSIL2A_20190708T143751_R096_T20LLQ_20201005T110109",
+            "S2A_MSIL2A_20190718T143751_R096_T20LLQ_20201005T155143",
+            "S2A_MSIL2A_20190728T143751_R096_T20LLQ_20201106T040209"
+          ],
+          "validPct": 100,
+          "forestPct": 95.8,
+          "forestHa": 861.8,
+          "refForestPct": 58.9,
+          "refValidPct": 95.5,
+          "rgb": "data/rondonia-frontier/2019-rgb.png",
+          "forest": "data/rondonia-frontier/2019-forest.png",
+          "loss": null
+        },
+        {
+          "year": 2021,
+          "window": "2021-07-01/2021-09-30",
+          "scenes": [
+            "S2A_MSIL2A_20210717T143731_R096_T20LLQ_20210718T013131",
+            "S2A_MSIL2A_20210707T143731_R096_T20LLQ_20210708T055541",
+            "S2B_MSIL2A_20210712T143729_R096_T20LLQ_20210713T081135"
+          ],
+          "validPct": 99.9,
+          "forestPct": 95,
+          "forestHa": 855.4,
+          "refForestPct": 50.8,
+          "refValidPct": 94.7,
+          "rgb": "data/rondonia-frontier/2021-rgb.png",
+          "forest": "data/rondonia-frontier/2021-forest.png",
+          "loss": "data/rondonia-frontier/2021-loss.png"
+        },
+        {
+          "year": 2023,
+          "window": "2023-07-01/2023-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20230712T143729_R096_T20LLQ_20241017T105934",
+            "S2A_MSIL2A_20230717T143731_R096_T20LLQ_20241015T200323",
+            "S2B_MSIL2A_20230702T143729_R096_T20LLQ_20230702T211617"
+          ],
+          "validPct": 99.9,
+          "forestPct": 93.7,
+          "forestHa": 843.7,
+          "refForestPct": 45.4,
+          "refValidPct": 96.7,
+          "rgb": "data/rondonia-frontier/2023-rgb.png",
+          "forest": "data/rondonia-frontier/2023-forest.png",
+          "loss": "data/rondonia-frontier/2023-loss.png"
+        },
+        {
+          "year": 2025,
+          "window": "2025-07-01/2025-09-30",
+          "scenes": [
+            "S2C_MSIL2A_20250726T143811_R096_T20LLQ_20250726T195657",
+            "S2C_MSIL2A_20250716T143811_R096_T20LLQ_20250716T194313",
+            "S2A_MSIL2A_20250827T143821_R096_T20LLQ_20250827T205917"
+          ],
+          "validPct": 100,
+          "forestPct": 78,
+          "forestHa": 702.1,
+          "refForestPct": 34.2,
+          "refValidPct": 94.4,
+          "rgb": "data/rondonia-frontier/2025-rgb.png",
+          "forest": "data/rondonia-frontier/2025-forest.png",
+          "loss": "data/rondonia-frontier/2025-loss.png"
+        },
+        {
+          "year": 2026,
+          "window": "2026-07-01/2026-09-30",
+          "scenes": [
+            "S2C_MSIL2A_20260830T143741_R096_T20LLQ_20260830T194119",
+            "S2C_MSIL2A_20260820T143741_R096_T20LLQ_20260820T193809",
+            "S2A_MSIL2A_20260822T143821_R096_T20LLQ_20260823T020511"
+          ],
+          "validPct": 100,
+          "forestPct": 77.9,
+          "forestHa": 701.3,
+          "refForestPct": 34.1,
+          "refValidPct": 96,
+          "rgb": "data/rondonia-frontier/2026-rgb.png",
+          "forest": "data/rondonia-frontier/2026-forest.png",
+          "loss": "data/rondonia-frontier/2026-loss.png"
+        }
+      ],
+      "summary": {
+        "baselineYear": 2019,
+        "latestYear": 2026,
+        "baselineForestHa": 861.8,
+        "latestForestHa": 701.3,
+        "remainingPct": 81.3,
+        "projectAnnualLossPct": 2.67,
+        "refAnnualLossPct": 6.02,
+        "status": "Frozen",
+        "overcredited": false
+      },
+      "plainSummary": "Between the 2019 and 2026 dry seasons, estimated forest cover inside the 900 ha project boundary went from 861.8 ha to 701.3 ha (160.5 ha lost, 18.7% of the baseline forest). That is below the 85% threshold, so the project's credits are frozen: they cannot be transferred or retired until a later check shows recovery or the loss is compensated. The nearby reference area lost 6.02% of its forest per year, while the developer claimed a 2% annual threat, which is consistent with the observed rate. Measurements use cloud-masked Sentinel-2 imagery (100% of the boundary had clear observations in 2026); they show land-cover change, not its cause.",
+      "evidenceHash": "0x486c6370293d04bf01386bd5a6dd9521fc127f87c12e99c9d10a73b6989ac165",
+      "evidence": "data/rondonia-frontier/evidence.json"
+    },
+    {
+      "id": "rondonia-riverside",
+      "name": "Candeias Riverside Forest",
+      "region": "Rondônia",
+      "country": "Brazil",
+      "continent": "South America",
+      "center": [
+        -9.2959,
+        -64.4773
+      ],
+      "boundary": [
+        [
+          -9.30948,
+          -64.49102
+        ],
+        [
+          -9.28224,
+          -64.4636
+        ]
+      ],
+      "reference": [
+        [
+          -9.33672,
+          -64.46382
+        ],
+        [
+          -9.30948,
+          -64.4364
+        ]
+      ],
+      "imageBounds": [
+        [
+          -9.30948,
+          -64.49102
+        ],
+        [
+          -9.28224,
+          -64.4636
+        ]
+      ],
+      "areaHa": 900,
+      "claimedThreatPctPerYear": 1.5,
+      "years": [
+        {
+          "year": 2019,
+          "window": "2019-07-01/2019-09-30",
+          "scenes": [
+            "S2A_MSIL2A_20190728T143751_R096_T20LLQ_20201106T040209",
+            "S2A_MSIL2A_20190718T143751_R096_T20LLQ_20201005T155143",
+            "S2A_MSIL2A_20190708T143751_R096_T20LLQ_20201005T110109"
+          ],
+          "validPct": 100,
+          "forestPct": 94.9,
+          "forestHa": 854,
+          "refForestPct": 60.3,
+          "refValidPct": 96.2,
+          "rgb": "data/rondonia-riverside/2019-rgb.png",
+          "forest": "data/rondonia-riverside/2019-forest.png",
+          "loss": null
+        },
+        {
+          "year": 2021,
+          "window": "2021-07-01/2021-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20210702T143729_R096_T20LLQ_20210703T044738",
+            "S2A_MSIL2A_20210707T143731_R096_T20LLQ_20210708T055541",
+            "S2A_MSIL2A_20210717T143731_R096_T20LLQ_20210718T013131"
+          ],
+          "validPct": 100,
+          "forestPct": 90.2,
+          "forestHa": 812.2,
+          "refForestPct": 59.5,
+          "refValidPct": 93.3,
+          "rgb": "data/rondonia-riverside/2021-rgb.png",
+          "forest": "data/rondonia-riverside/2021-forest.png",
+          "loss": "data/rondonia-riverside/2021-loss.png"
+        },
+        {
+          "year": 2023,
+          "window": "2023-07-01/2023-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20230712T143729_R096_T20LLQ_20241017T105934",
+            "S2B_MSIL2A_20230702T143729_R096_T20LLQ_20230702T211617",
+            "S2A_MSIL2A_20230707T143731_R096_T20LLQ_20241012T155203"
+          ],
+          "validPct": 100,
+          "forestPct": 80.4,
+          "forestHa": 723.8,
+          "refForestPct": 43.3,
+          "refValidPct": 96.9,
+          "rgb": "data/rondonia-riverside/2023-rgb.png",
+          "forest": "data/rondonia-riverside/2023-forest.png",
+          "loss": "data/rondonia-riverside/2023-loss.png"
+        },
+        {
+          "year": 2025,
+          "window": "2025-07-01/2025-09-30",
+          "scenes": [
+            "S2C_MSIL2A_20250716T143811_R096_T20LLQ_20250716T194313",
+            "S2A_MSIL2A_20250827T143821_R096_T20LLQ_20250827T205917",
+            "S2C_MSIL2A_20250726T143811_R096_T20LLQ_20250726T195657"
+          ],
+          "validPct": 100,
+          "forestPct": 79.6,
+          "forestHa": 716.4,
+          "refForestPct": 38.9,
+          "refValidPct": 94.2,
+          "rgb": "data/rondonia-riverside/2025-rgb.png",
+          "forest": "data/rondonia-riverside/2025-forest.png",
+          "loss": "data/rondonia-riverside/2025-loss.png"
+        },
+        {
+          "year": 2026,
+          "window": "2026-07-01/2026-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20260726T143749_R096_T20LLQ_20260726T181715",
+            "S2B_MSIL2A_20260815T143739_R096_T20LLQ_20260815T181707",
+            "S2A_MSIL2A_20260911T143821_R096_T20LLQ_20260911T223033"
+          ],
+          "validPct": 100,
+          "forestPct": 78.8,
+          "forestHa": 708.9,
+          "refForestPct": 38,
+          "refValidPct": 96.1,
+          "rgb": "data/rondonia-riverside/2026-rgb.png",
+          "forest": "data/rondonia-riverside/2026-forest.png",
+          "loss": "data/rondonia-riverside/2026-loss.png"
+        }
+      ],
+      "summary": {
+        "baselineYear": 2019,
+        "latestYear": 2026,
+        "baselineForestHa": 854,
+        "latestForestHa": 708.9,
+        "remainingPct": 83,
+        "projectAnnualLossPct": 2.42,
+        "refAnnualLossPct": 5.28,
+        "status": "Frozen",
+        "overcredited": false
+      },
+      "plainSummary": "Between the 2019 and 2026 dry seasons, estimated forest cover inside the 900 ha project boundary went from 854 ha to 708.9 ha (145.1 ha lost, 17% of the baseline forest). That is below the 85% threshold, so the project's credits are frozen: they cannot be transferred or retired until a later check shows recovery or the loss is compensated. The nearby reference area lost 5.28% of its forest per year, while the developer claimed a 1.5% annual threat, which is consistent with the observed rate. Measurements use cloud-masked Sentinel-2 imagery (100% of the boundary had clear observations in 2026); they show land-cover change, not its cause.",
+      "evidenceHash": "0x65009cee23e09d7cad92e118cc9364f8c3b4b7a8b78b28bcce2ffc86ace2d940",
+      "evidence": "data/rondonia-riverside/evidence.json"
+    },
+    {
+      "id": "borneo-interior",
+      "name": "Kalimantan Highland Forest",
+      "region": "Kalimantan",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "center": [
+        0.6,
+        113.0269
+      ],
+      "boundary": [
+        [
+          0.58643,
+          113.01344
+        ],
+        [
+          0.61357,
+          113.04039
+        ]
+      ],
+      "reference": [
+        [
+          0.61355,
+          113.04039
+        ],
+        [
+          0.64068,
+          113.06735
+        ]
+      ],
+      "imageBounds": [
+        [
+          0.58643,
+          113.01344
+        ],
+        [
+          0.61357,
+          113.04039
+        ]
+      ],
+      "areaHa": 900,
+      "claimedThreatPctPerYear": 2.5,
+      "years": [
+        {
+          "year": 2019,
+          "window": "2019-06-01/2019-09-30",
+          "scenes": [
+            "S2A_MSIL2A_20190916T023551_R089_T49NGA_20201004T133830",
+            "S2B_MSIL2A_20190812T023559_R089_T49NGA_20201004T233151",
+            "S2A_MSIL2A_20190718T023551_R089_T49NGA_20201005T154345"
+          ],
+          "validPct": 100,
+          "forestPct": 99.6,
+          "forestHa": 896,
+          "refForestPct": 99.9,
+          "refValidPct": 100,
+          "rgb": "data/borneo-interior/2019-rgb.png",
+          "forest": "data/borneo-interior/2019-forest.png",
+          "loss": null
+        },
+        {
+          "year": 2021,
+          "window": "2021-06-01/2021-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20210801T023549_R089_T49NGA_20210801T163925",
+            "S2A_MSIL2A_20210925T023551_R089_T49NGA_20210925T233245",
+            "S2B_MSIL2A_20210602T023549_R089_T49NGA_20210602T193504"
+          ],
+          "validPct": 100,
+          "forestPct": 98.7,
+          "forestHa": 888.3,
+          "refForestPct": 98.7,
+          "refValidPct": 100,
+          "rgb": "data/borneo-interior/2021-rgb.png",
+          "forest": "data/borneo-interior/2021-forest.png",
+          "loss": "data/borneo-interior/2021-loss.png"
+        },
+        {
+          "year": 2023,
+          "window": "2023-06-01/2023-09-30",
+          "scenes": [
+            "S2A_MSIL2A_20230727T023531_R089_T49NGA_20241016T222558",
+            "S2B_MSIL2A_20230801T023539_R089_T49NGA_20241016T153357",
+            "S2A_MSIL2A_20230717T023531_R089_T49NGA_20230717T092037"
+          ],
+          "validPct": 100,
+          "forestPct": 98.2,
+          "forestHa": 884.1,
+          "refForestPct": 98.6,
+          "refValidPct": 100,
+          "rgb": "data/borneo-interior/2023-rgb.png",
+          "forest": "data/borneo-interior/2023-forest.png",
+          "loss": "data/borneo-interior/2023-loss.png"
+        },
+        {
+          "year": 2025,
+          "window": "2025-06-01/2025-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20250701T023529_R089_T49NGA_20250701T062416",
+            "S2C_MSIL2A_20250805T023551_R089_T49NGA_20250805T064016",
+            "S2B_MSIL2A_20250731T023529_R089_T49NGA_20250731T061354"
+          ],
+          "validPct": 100,
+          "forestPct": 98,
+          "forestHa": 882.2,
+          "refForestPct": 98.6,
+          "refValidPct": 100,
+          "rgb": "data/borneo-interior/2025-rgb.png",
+          "forest": "data/borneo-interior/2025-forest.png",
+          "loss": "data/borneo-interior/2025-loss.png"
+        },
+        {
+          "year": 2026,
+          "window": "2026-06-01/2026-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20260606T023529_R089_T49NGA_20260606T044857",
+            "S2A_MSIL2A_20260603T024141_R089_T49NGA_20260603T071657",
+            "S2B_MSIL2A_20260726T023529_R089_T49NGA_20260726T044525"
+          ],
+          "validPct": 100,
+          "forestPct": 98,
+          "forestHa": 881.9,
+          "refForestPct": 98.6,
+          "refValidPct": 100,
+          "rgb": "data/borneo-interior/2026-rgb.png",
+          "forest": "data/borneo-interior/2026-forest.png",
+          "loss": "data/borneo-interior/2026-loss.png"
+        }
+      ],
+      "summary": {
+        "baselineYear": 2019,
+        "latestYear": 2026,
+        "baselineForestHa": 896,
+        "latestForestHa": 881.9,
+        "remainingPct": 98.4,
+        "projectAnnualLossPct": 0.23,
+        "refAnnualLossPct": 0.19,
+        "status": "Healthy",
+        "overcredited": true
+      },
+      "plainSummary": "Between the 2019 and 2026 dry seasons, estimated forest cover inside the 900 ha project boundary went from 896 ha to 881.9 ha (14.1 ha lost, 1.6% of the baseline forest). At least 95% of the baseline forest remains, so the credits are Healthy. The nearby reference area lost 0.19% of its forest per year, while the developer claimed a 2.5% annual threat. Because the claim is more than twice the observed reference rate, the project is flagged as possibly overcredited. This is an indicator for review, not proof of fraud. Measurements use cloud-masked Sentinel-2 imagery (100% of the boundary had clear observations in 2026); they show land-cover change, not its cause.",
+      "evidenceHash": "0x789c841c6e0234e2495f4b9b95e397af06eae62bd1b7817c828629f60e302a0b",
+      "evidence": "data/borneo-interior/evidence.json"
+    }
+  ]
+}
