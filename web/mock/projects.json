@@ -1,0 +1,409 @@
+{
+  "generatedAt": "2026-10-25T17:44:00.682Z",
+  "source": "Sentinel-2 L2A via Microsoft Planetary Computer",
+  "mock": true,
+  "classifier": {
+    "type": "logistic-regression",
+    "features": [
+      "B02",
+      "B03",
+      "B04",
+      "B08",
+      "B11",
+      "B12",
+      "NDVI",
+      "NDMI"
+    ],
+    "labels": "ESA WorldCover 2021 — tree cover (class 10) vs other",
+    "trainPixels": 24000,
+    "testPixels": 6000,
+    "accuracy": 0.934,
+    "precision": 0.951,
+    "recall": 0.927,
+    "f1": 0.939
+  },
+  "thresholds": {
+    "healthyPct": 95,
+    "atRiskPct": 85
+  },
+  "projects": [
+    {
+      "id": "amazon-frontier",
+      "name": "Igarapé Demo Forest",
+      "region": "Rondônia",
+      "country": "Brazil",
+      "continent": "South America",
+      "center": [
+        -9.7,
+        -63.05
+      ],
+      "boundary": [
+        [
+          -9.725,
+          -63.075
+        ],
+        [
+          -9.675,
+          -63.025
+        ]
+      ],
+      "reference": [
+        [
+          -9.795,
+          -63.175
+        ],
+        [
+          -9.745,
+          -63.125
+        ]
+      ],
+      "imageBounds": [
+        [
+          -9.805,
+          -63.185
+        ],
+        [
+          -9.665,
+          -63.015
+        ]
+      ],
+      "areaHa": 3054,
+      "claimedThreatPctPerYear": 1.8,
+      "years": [
+        {
+          "year": 2019,
+          "window": "2019-06-01/2019-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20190712_DEMO_0A",
+            "S2A_MSIL2A_20190806_DEMO_0B",
+            "S2B_MSIL2A_20190821_DEMO_0C"
+          ],
+          "validPct": 83,
+          "forestPct": 91.2,
+          "forestHa": 2785,
+          "refForestPct": 88,
+          "refValidPct": 85,
+          "rgb": "data/amazon-frontier/2019-rgb.png",
+          "forest": "data/amazon-frontier/2019-forest.png",
+          "loss": null
+        },
+        {
+          "year": 2021,
+          "window": "2021-06-01/2021-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20210712_DEMO_1A",
+            "S2A_MSIL2A_20210806_DEMO_1B",
+            "S2B_MSIL2A_20210821_DEMO_1C"
+          ],
+          "validPct": 71,
+          "forestPct": 84.6,
+          "forestHa": 2584,
+          "refForestPct": 86.1,
+          "refValidPct": 69,
+          "rgb": "data/amazon-frontier/2021-rgb.png",
+          "forest": "data/amazon-frontier/2021-forest.png",
+          "loss": "data/amazon-frontier/2021-loss.png"
+        },
+        {
+          "year": 2023,
+          "window": "2023-06-01/2023-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20230712_DEMO_2A",
+            "S2A_MSIL2A_20230806_DEMO_2B",
+            "S2B_MSIL2A_20230821_DEMO_2C"
+          ],
+          "validPct": 88,
+          "forestPct": 76.3,
+          "forestHa": 2330,
+          "refForestPct": 84,
+          "refValidPct": 90,
+          "rgb": "data/amazon-frontier/2023-rgb.png",
+          "forest": "data/amazon-frontier/2023-forest.png",
+          "loss": "data/amazon-frontier/2023-loss.png"
+        },
+        {
+          "year": 2025,
+          "window": "2025-06-01/2025-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20250712_DEMO_3A",
+            "S2A_MSIL2A_20250806_DEMO_3B",
+            "S2B_MSIL2A_20250821_DEMO_3C"
+          ],
+          "validPct": 79,
+          "forestPct": 68.9,
+          "forestHa": 2104,
+          "refForestPct": 82.2,
+          "refValidPct": 81,
+          "rgb": "data/amazon-frontier/2025-rgb.png",
+          "forest": "data/amazon-frontier/2025-forest.png",
+          "loss": "data/amazon-frontier/2025-loss.png"
+        }
+      ],
+      "summary": {
+        "baselineYear": 2019,
+        "latestYear": 2025,
+        "baselineForestHa": 2785,
+        "latestForestHa": 2104,
+        "remainingPct": 75.5,
+        "projectAnnualLossPct": 4.57,
+        "refAnnualLossPct": 1.13,
+        "status": "Frozen",
+        "overcredited": false
+      },
+      "plainSummary": "Between 2019 and 2025, estimated forest cover inside the Igarapé Demo Forest boundary went from 2,785 ha to 2,104 ha (75.5% of the baseline remains), an average loss of 4.57% per year. The nearby reference area lost 1.13% per year over the same period, while the project claimed a 1.8% annual threat. Because remaining forest fell below 85% of the baseline, the credits are frozen until the loss is investigated. The claimed threat is broadly consistent with the reference area.",
+      "evidenceHash": "0xd33e74f90e4f7e46184287a46db66f88627f3cc883aa0f5dfe3f7738fde4ff97"
+    },
+    {
+      "id": "borneo-peat",
+      "name": "Kapuas Demo Peat Forest",
+      "region": "West Kalimantan",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "center": [
+        0.85,
+        112.9
+      ],
+      "boundary": [
+        [
+          0.825,
+          112.875
+        ],
+        [
+          0.875,
+          112.925
+        ]
+      ],
+      "reference": [
+        [
+          0.755,
+          112.975
+        ],
+        [
+          0.805,
+          113.025
+        ]
+      ],
+      "imageBounds": [
+        [
+          0.745,
+          112.865
+        ],
+        [
+          0.885,
+          113.035
+        ]
+      ],
+      "areaHa": 3098,
+      "claimedThreatPctPerYear": 3,
+      "years": [
+        {
+          "year": 2019,
+          "window": "2019-06-01/2019-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20190712_DEMO_0A",
+            "S2A_MSIL2A_20190806_DEMO_0B",
+            "S2B_MSIL2A_20190821_DEMO_0C"
+          ],
+          "validPct": 74,
+          "forestPct": 94.1,
+          "forestHa": 2915,
+          "refForestPct": 92,
+          "refValidPct": 77,
+          "rgb": "data/borneo-peat/2019-rgb.png",
+          "forest": "data/borneo-peat/2019-forest.png",
+          "loss": null
+        },
+        {
+          "year": 2021,
+          "window": "2021-06-01/2021-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20210712_DEMO_1A",
+            "S2A_MSIL2A_20210806_DEMO_1B",
+            "S2B_MSIL2A_20210821_DEMO_1C"
+          ],
+          "validPct": 48,
+          "forestPct": 93.8,
+          "forestHa": 2906,
+          "refForestPct": 91.9,
+          "refValidPct": 52,
+          "rgb": "data/borneo-peat/2021-rgb.png",
+          "forest": "data/borneo-peat/2021-forest.png",
+          "loss": "data/borneo-peat/2021-loss.png"
+        },
+        {
+          "year": 2023,
+          "window": "2023-06-01/2023-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20230712_DEMO_2A",
+            "S2A_MSIL2A_20230806_DEMO_2B",
+            "S2B_MSIL2A_20230821_DEMO_2C"
+          ],
+          "validPct": 66,
+          "forestPct": 93.5,
+          "forestHa": 2897,
+          "refForestPct": 91.7,
+          "refValidPct": 70,
+          "rgb": "data/borneo-peat/2023-rgb.png",
+          "forest": "data/borneo-peat/2023-forest.png",
+          "loss": "data/borneo-peat/2023-loss.png"
+        },
+        {
+          "year": 2025,
+          "window": "2025-06-01/2025-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20250712_DEMO_3A",
+            "S2A_MSIL2A_20250806_DEMO_3B",
+            "S2B_MSIL2A_20250821_DEMO_3C"
+          ],
+          "validPct": 71,
+          "forestPct": 93.4,
+          "forestHa": 2894,
+          "refForestPct": 91.6,
+          "refValidPct": 73,
+          "rgb": "data/borneo-peat/2025-rgb.png",
+          "forest": "data/borneo-peat/2025-forest.png",
+          "loss": "data/borneo-peat/2025-loss.png"
+        }
+      ],
+      "summary": {
+        "baselineYear": 2019,
+        "latestYear": 2025,
+        "baselineForestHa": 2915,
+        "latestForestHa": 2894,
+        "remainingPct": 99.3,
+        "projectAnnualLossPct": 0.12,
+        "refAnnualLossPct": 0.07,
+        "status": "Healthy",
+        "overcredited": true
+      },
+      "plainSummary": "Between 2019 and 2025, estimated forest cover inside the Kapuas Demo Peat Forest boundary went from 2,915 ha to 2,894 ha (99.3% of the baseline remains), an average loss of 0.12% per year. The nearby reference area lost 0.07% per year over the same period, while the project claimed a 3% annual threat. Forest cover is stable, so the credits remain Healthy. The claimed threat is much higher than the loss observed in the reference area, which suggests the baseline may be overstated. This is an indicator for review, not proof of fraud.",
+      "evidenceHash": "0xb7d24ea7b3914aeef9d6fa19d5debf53f77b7733d9d533ec8ab1e65d2329f9fa"
+    },
+    {
+      "id": "congo-basin",
+      "name": "Lukenie Demo Forest",
+      "region": "Kasai",
+      "country": "DR Congo",
+      "continent": "Africa",
+      "center": [
+        -2.9,
+        21.6
+      ],
+      "boundary": [
+        [
+          -2.925,
+          21.575
+        ],
+        [
+          -2.875,
+          21.625
+        ]
+      ],
+      "reference": [
+        [
+          -2.995,
+          21.675
+        ],
+        [
+          -2.945,
+          21.725
+        ]
+      ],
+      "imageBounds": [
+        [
+          -3.005,
+          21.565
+        ],
+        [
+          -2.865,
+          21.735
+        ]
+      ],
+      "areaHa": 3094,
+      "claimedThreatPctPerYear": 1,
+      "years": [
+        {
+          "year": 2019,
+          "window": "2019-06-01/2019-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20190712_DEMO_0A",
+            "S2A_MSIL2A_20190806_DEMO_0B",
+            "S2B_MSIL2A_20190821_DEMO_0C"
+          ],
+          "validPct": 69,
+          "forestPct": 96,
+          "forestHa": 2970,
+          "refForestPct": 95,
+          "refValidPct": 71,
+          "rgb": "data/congo-basin/2019-rgb.png",
+          "forest": "data/congo-basin/2019-forest.png",
+          "loss": null
+        },
+        {
+          "year": 2021,
+          "window": "2021-06-01/2021-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20210712_DEMO_1A",
+            "S2A_MSIL2A_20210806_DEMO_1B",
+            "S2B_MSIL2A_20210821_DEMO_1C"
+          ],
+          "validPct": 62,
+          "forestPct": 93.9,
+          "forestHa": 2905,
+          "refForestPct": 94,
+          "refValidPct": 60,
+          "rgb": "data/congo-basin/2021-rgb.png",
+          "forest": "data/congo-basin/2021-forest.png",
+          "loss": "data/congo-basin/2021-loss.png"
+        },
+        {
+          "year": 2023,
+          "window": "2023-06-01/2023-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20230712_DEMO_2A",
+            "S2A_MSIL2A_20230806_DEMO_2B",
+            "S2B_MSIL2A_20230821_DEMO_2C"
+          ],
+          "validPct": 75,
+          "forestPct": 90.8,
+          "forestHa": 2809,
+          "refForestPct": 92.9,
+          "refValidPct": 77,
+          "rgb": "data/congo-basin/2023-rgb.png",
+          "forest": "data/congo-basin/2023-forest.png",
+          "loss": "data/congo-basin/2023-loss.png"
+        },
+        {
+          "year": 2025,
+          "window": "2025-06-01/2025-09-30",
+          "scenes": [
+            "S2B_MSIL2A_20250712_DEMO_3A",
+            "S2A_MSIL2A_20250806_DEMO_3B",
+            "S2B_MSIL2A_20250821_DEMO_3C"
+          ],
+          "validPct": 64,
+          "forestPct": 88.1,
+          "forestHa": 2726,
+          "refForestPct": 91.9,
+          "refValidPct": 66,
+          "rgb": "data/congo-basin/2025-rgb.png",
+          "forest": "data/congo-basin/2025-forest.png",
+          "loss": "data/congo-basin/2025-loss.png"
+        }
+      ],
+      "summary": {
+        "baselineYear": 2019,
+        "latestYear": 2025,
+        "baselineForestHa": 2970,
+        "latestForestHa": 2726,
+        "remainingPct": 91.8,
+        "projectAnnualLossPct": 1.42,
+        "refAnnualLossPct": 0.55,
+        "status": "At Risk",
+        "overcredited": false
+      },
+      "plainSummary": "Between 2019 and 2025, estimated forest cover inside the Lukenie Demo Forest boundary went from 2,970 ha to 2,726 ha (91.8% of the baseline remains), an average loss of 1.42% per year. The nearby reference area lost 0.55% per year over the same period, while the project claimed a 1% annual threat. Remaining forest is between 85% and 95% of the baseline, so the credits carry an At Risk warning. The claimed threat is broadly consistent with the reference area.",
+      "evidenceHash": "0x3b73f2ddf8186c3ecf5860c1c5b152ecc897a43255aeeb2ed481e8b032f82035"
+    }
+  ]
+}
